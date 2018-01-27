@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		FD95D3B0201BF28200F584F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3AF201BF28200F584F1 /* AppDelegate.swift */; };
-		FD95D3B2201BF28200F584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3B1201BF28200F584F1 /* ViewController.swift */; };
 		FD95D3B5201BF28200F584F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD95D3B3201BF28200F584F1 /* Main.storyboard */; };
 		FD95D3B8201BF28200F584F1 /* MyFirstNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3B6201BF28200F584F1 /* MyFirstNote.xcdatamodeld */; };
 		FD95D3BA201BF28200F584F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD95D3B9201BF28200F584F1 /* Assets.xcassets */; };
 		FD95D3BD201BF28200F584F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD95D3BB201BF28200F584F1 /* LaunchScreen.storyboard */; };
+		FD95D3C9201BF9E800F584F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3C8201BF9E800F584F1 /* UIColor.swift */; };
+		FD95D3CB201BFE3E00F584F1 /* NotesViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3CA201BFE3E00F584F1 /* NotesViewCotroller.swift */; };
+		FD95D3CD201BFEB600F584F1 /* FoldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3CC201BFEB600F584F1 /* FoldersViewController.swift */; };
+		FD95D3CF201BFF5500F584F1 /* NoteDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95D3CE201BFF5500F584F1 /* NoteDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD95D3AC201BF28200F584F1 /* MyFirstNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD95D3AF201BF28200F584F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD95D3B1201BF28200F584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD95D3B4201BF28200F584F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD95D3B7201BF28200F584F1 /* MyFirstNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFirstNote.xcdatamodel; sourceTree = "<group>"; };
 		FD95D3B9201BF28200F584F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD95D3BC201BF28200F584F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD95D3BE201BF28200F584F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD95D3C8201BF9E800F584F1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FD95D3CA201BFE3E00F584F1 /* NotesViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewCotroller.swift; sourceTree = "<group>"; };
+		FD95D3CC201BFEB600F584F1 /* FoldersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersViewController.swift; sourceTree = "<group>"; };
+		FD95D3CE201BFF5500F584F1 /* NoteDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				FD95D3AF201BF28200F584F1 /* AppDelegate.swift */,
-				FD95D3B1201BF28200F584F1 /* ViewController.swift */,
-				FD95D3B3201BF28200F584F1 /* Main.storyboard */,
-				FD95D3B9201BF28200F584F1 /* Assets.xcassets */,
-				FD95D3BB201BF28200F584F1 /* LaunchScreen.storyboard */,
+				FD95D3C7201BF2C600F584F1 /* Views */,
+				FD95D3C4201BF28700F584F1 /* Data Model */,
+				FD95D3C6201BF2AB00F584F1 /* Controllers */,
+				FD95D3C5201BF2A100F584F1 /* Support Files */,
 				FD95D3BE201BF28200F584F1 /* Info.plist */,
-				FD95D3B6201BF28200F584F1 /* MyFirstNote.xcdatamodeld */,
 			);
 			path = MyFirstNote;
+			sourceTree = "<group>";
+		};
+		FD95D3C4201BF28700F584F1 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD95D3B6201BF28200F584F1 /* MyFirstNote.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		FD95D3C5201BF2A100F584F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD95D3B9201BF28200F584F1 /* Assets.xcassets */,
+				FD95D3BB201BF28200F584F1 /* LaunchScreen.storyboard */,
+				FD95D3C8201BF9E800F584F1 /* UIColor.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		FD95D3C6201BF2AB00F584F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD95D3CC201BFEB600F584F1 /* FoldersViewController.swift */,
+				FD95D3CA201BFE3E00F584F1 /* NotesViewCotroller.swift */,
+				FD95D3CE201BFF5500F584F1 /* NoteDetails.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD95D3C7201BF2C600F584F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD95D3B3201BF28200F584F1 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD95D3B2201BF28200F584F1 /* ViewController.swift in Sources */,
+				FD95D3CD201BFEB600F584F1 /* FoldersViewController.swift in Sources */,
+				FD95D3C9201BF9E800F584F1 /* UIColor.swift in Sources */,
 				FD95D3B0201BF28200F584F1 /* AppDelegate.swift in Sources */,
+				FD95D3CB201BFE3E00F584F1 /* NotesViewCotroller.swift in Sources */,
+				FD95D3CF201BFF5500F584F1 /* NoteDetails.swift in Sources */,
 				FD95D3B8201BF28200F584F1 /* MyFirstNote.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
